@@ -1,0 +1,181 @@
+a0099a6 - Sat Apr 1 23:57:29 2017 -0400 - Mary Taft - welp so much for alarm
+47e5514 - Sat Apr 1 23:40:21 2017 -0400 - Mary Taft - NESTED COWS
+b621417 - Sat Apr 1 22:44:33 2017 -0400 - Mary Taft - blocked SIGTSTP
+003f9cf - Sat Apr 1 22:39:39 2017 -0400 - Mary Taft - updated comments
+5a979f0 - Sat Apr 1 22:26:41 2017 -0400 - Mary Taft - handling dead children (omg what are these commit messages to people who don't know the terminology) but CPU utlization time doesn't work yet
+5564bd3 - Sat Apr 1 21:50:40 2017 -0400 - Mary Taft - couldn't figure out how to pipe w/o a buffer file BUT got single pipe working WITH a buffer file
+6c11377 - Sat Apr 1 20:44:34 2017 -0400 - Mary Taft - commented in main() to make it more readable, and updated prompt (my bad I forgot the $)
+c36e1d1 - Sat Apr 1 20:28:25 2017 -0400 - Mary Taft - three of five redirection cases
+6d3da82 - Sat Apr 1 20:10:48 2017 -0400 - Mary Taft - eyyy upgraded from wait() to waitpid() for execstuffs
+79640dd - Sat Apr 1 18:56:36 2017 -0400 - Mary Taft - placeholders for stuff (to-do's everywhere)
+e78a659 - Sat Apr 1 18:27:42 2017 -0400 - Mary Taft - one type of redirection (>) mostly working but not yet finished
+d813151 - Sat Apr 1 17:52:15 2017 -0400 - Mary Taft - progress on redirection
+66fba4e - Sat Apr 1 03:30:11 2017 -0400 - Mary Taft - modified prompt
+803919a - Sat Apr 1 03:17:41 2017 -0400 - Mary Taft - handled SIGUSR2, except with printf(), which is a problem, b/c not async-signal safe.  will update later
+ba4ed6e - Sat Apr 1 03:11:33 2017 -0400 - Mary Taft - rough redirection stuffs
+127e59c - Sat Apr 1 02:47:42 2017 -0400 - Mary Taft - updated help message.  I git-added from inside my own shell, but I couldn't git-commit (apparently paths with -a don't make sense)
+31b72f2 - Sat Apr 1 00:55:19 2017 -0400 - Mary Taft - comments re. possible errors; made separate print_help_msg() function
+81fdf27 - Sat Apr 1 00:08:43 2017 -0400 - Mary Taft - previously forgot to set PWD and OLDPWD when cd'ing to HOME
+4934fe1 - Fri Mar 31 23:18:47 2017 -0400 - Mary Taft - nooo I fixed the over-allocation but I forgot to update the comment
+cad4416 - Fri Mar 31 23:14:54 2017 -0400 - Mary Taft - fixed my lazy bummitude and malloced the appropriate amount of memory
+d4cbddb - Fri Mar 31 22:38:05 2017 -0400 - Mary Taft - whoa this might actually work (executables) and whoa no memleaks whoa whoa whoa! (lol hopes so high T_T )
+1e3b8a1 - Fri Mar 31 22:29:58 2017 -0400 - Mary Taft - various PATH searching things and making sure no mem leaks
+de9e6ca - Fri Mar 31 22:06:54 2017 -0400 - Mary Taft - way to iterate through PATH but haven't actually done anything
+6be3cbc - Fri Mar 31 20:57:47 2017 -0400 - Mary Taft - some pathstuffs
+af079e9 - Fri Mar 31 04:24:28 2017 -0400 - Mary Taft - previously forgot to NULL-terminate tokens array; fixed, such that the argv param of execv works properly
+93e3077 - Fri Mar 31 04:18:20 2017 -0400 - Mary Taft - soooome exec stuff, but doesn't accept any args except absolute paths, and also doesn't use stat() before calling exec(), which it should, because exec() is expensive
+4ea86e9 - Fri Mar 31 03:39:31 2017 -0400 - Mary Taft - fixed handling of exit, forked (although nothing else) for executables
+91d993b - Fri Mar 31 02:15:47 2017 -0400 - Mary Taft - pwd forked
+e0b1da2 - Fri Mar 31 00:05:57 2017 -0400 - Mary Taft - some cd features
+7c27791 - Thu Mar 30 22:38:52 2017 -0400 - Mary Taft - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah supporting cd and temporary pwd just to check that cd works
+08d01b7 - Thu Mar 30 21:35:47 2017 -0400 - Mary Taft - I should have started this so so very long ago
+8c926e6 - Tue Mar 21 18:47:59 2017 -0400 - Mary Taft - CI enabling
+178dbb2 - Tue Mar 21 18:45:52 2017 -0400 - Mary Taft - initial merge of HW4_CODE
+b98d190 - Thu Mar 16 10:02:42 2017 -0400 - cse320 - hw4 basecode
+ab8d87a - Fri Mar 10 23:58:35 2017 -0500 - Mary Taft - rip
+96e2f6a - Fri Mar 10 23:56:05 2017 -0500 - Mary Taft - num coalesces
+e1094cb - Fri Mar 10 23:47:30 2017 -0500 - Mary Taft - got some of the stats maybe didn't test whatever
+4f73b0d - Fri Mar 10 23:20:43 2017 -0500 - Mary Taft - slight-improved dummy return vals for info...
+a6c5449 - Fri Mar 10 23:18:36 2017 -0500 - Mary Taft - I have 3 meaningful unit tests yay
+54c185b - Fri Mar 10 23:13:00 2017 -0500 - Mary Taft - two of three unit tests
+dc39f06 - Fri Mar 10 23:03:41 2017 -0500 - Mary Taft - another edge case
+18ad52c - Fri Mar 10 22:11:02 2017 -0500 - Mary Taft - organizational overhaul.  a couple of bugs fixed.
+0ce6843 - Fri Mar 10 16:08:32 2017 -0500 - Mary Taft - fixed bug in get_mem_from_heap()
+e0c95da - Fri Mar 10 15:15:01 2017 -0500 - Mary Taft - this code is ugly as anything but I'm running test cases and so far realloc is working.......
+edf2fc5 - Fri Mar 10 14:01:44 2017 -0500 - Mary Taft - except I forgot to remove the temporary return value
+7a19834 - Fri Mar 10 14:00:23 2017 -0500 - Mary Taft - handled extend-then-split case
+fe86b59 - Fri Mar 10 13:35:30 2017 -0500 - Mary Taft - handled extending block into an adjacent free block in the case that a splinter would be caused (didn't handle block-splitting yet)
+ea44b48 - Fri Mar 10 12:57:06 2017 -0500 - Mary Taft - incremental progress on realloc grow
+5fc3af0 - Fri Mar 10 11:19:26 2017 -0500 - Mary Taft - this is some of the ugliest code I've ever written.  anyway, fixed realloc shrinking cases, which I had previous done imcompletely (didn't coalesce with adjacent free blocks).  nooooow time for realloc grow.
+3739210 - Fri Mar 10 03:43:10 2017 -0500 - Mary Taft - kinda sorta have pseudo-pseduocode for how to grow a block in realloc
+9adb81d - Fri Mar 10 01:47:21 2017 -0500 - Mary Taft - handled same size and shrinking reallocs; time to handle growing a block
+fb32254 - Fri Mar 10 01:03:31 2017 -0500 - Mary Taft - progress on realloc
+0ac4b03 - Thu Mar 9 19:41:43 2017 -0500 - Mary Taft - this should (should) be the final conceptual edit to get_mem_from_heap() [via num_pages_needed()]
+54b1eb0 - Thu Mar 9 19:08:47 2017 -0500 - Mary Taft - in progress on case that last block in mem is free and therefore decreases the size passed to sf_sbrk() in get_mem_from_heap()
+54ae3f2 - Thu Mar 9 18:34:55 2017 -0500 - Mary Taft - I thiiiiiiink freeing works, thiiiiiiiiiiiiiiiiiiiiink
+d1e6f39 - Thu Mar 9 15:52:12 2017 -0500 - Mary Taft - notes for proceeding
+7fe163b - Thu Mar 9 15:44:02 2017 -0500 - Mary Taft - fixed some cases for invalid pointers passed to free, but haven't covered all cases yet
+9fb42be - Thu Mar 9 14:44:50 2017 -0500 - Mary Taft - lol it's broken but I want to capture it in its brokenness
+e00a078 - Thu Mar 9 11:50:34 2017 -0500 - Mary Taft - factored out coalescing more cleanly
+7a26a06 - Thu Mar 9 04:46:16 2017 -0500 - Mary Taft - implemented coalescing and freeing; however, haven't accounted for invalid pointers passed into sf_free()
+7e30fa2 - Thu Mar 9 02:06:55 2017 -0500 - Mary Taft - fixed bug in set_boundary_tags()
+53ec590 - Thu Mar 9 01:30:04 2017 -0500 - Mary Taft - oops forgot to commit this last time
+1ee7fe9 - Thu Mar 9 01:09:01 2017 -0500 - Mary Taft - this code leads me to pass two test cases, apparently; I'm not sure why but I'm thus committing this
+255c9a4 - Wed Mar 8 23:57:09 2017 -0500 - Mary Taft - gaaaaaaaaaaaaah started filling in helper functions for malloc and trying to implement get_mem_from_heap
+c6812a4 - Wed Mar 8 20:59:09 2017 -0500 - Mary Taft - interim still not writing much code
+7130879 - Wed Mar 8 17:27:15 2017 -0500 - Mary Taft - more setup and minimal actual code
+505a085 - Wed Mar 8 15:56:04 2017 -0500 - Mary Taft - incremental progress on malloc, although I haven't written any of the helper functions.  again, at least it compiles.
+10fce76 - Wed Mar 8 01:26:15 2017 -0500 - Mary Taft - well, it compiles...
+52f80e2 - Tue Mar 7 21:46:05 2017 -0500 - Mary Taft - oh man this has been minimal progress
+d6709a9 - Tue Mar 7 15:26:24 2017 -0500 - Mary Taft - are there more updates?
+4a88944 - Wed Mar 1 16:08:13 2017 -0500 - Neal Beeken - sfutil.o update Feb 1st
+a615e96 - Wed Mar 1 14:48:07 2017 -0500 - Mary Taft - updating hw3 code again
+4411675 - Fri Feb 24 18:54:36 2017 -0500 - jaczheng - Update footer address calculations
+48ec3fd - Fri Feb 24 17:15:37 2017 -0500 - Mary Taft - updating hw3 code
+2c250bc - Thu Feb 23 20:25:19 2017 -0500 - cse320 - Merge branch 'master' of https://gitlab01.cs.stonybrook.edu/cse320/hw3
+7f4dbe0 - Thu Feb 23 20:24:41 2017 -0500 - cse320 - sfutil.o update
+7ebc452 - Wed Feb 22 14:49:38 2017 -0500 - Mary Taft - merging hw3 code
+365130f - Wed Feb 22 12:52:35 2017 -0500 - Neal Beeken - Line 68 changed to sf_varprint() in main.c
+18374e6 - Tue Feb 21 09:18:57 2017 -0500 - cse320 - hw3 basecode
+1d75843 - Sat Feb 18 23:40:31 2017 -0500 - Mary Taft - lol >=
+d058582 - Sat Feb 18 23:38:55 2017 -0500 - Mary Taft - lol numbers aren't punctuation
+0080449 - Sat Feb 18 22:03:10 2017 -0500 - Mary Taft - lolpathlolpathlolpathlolpathlolpath
+47db582 - Sat Feb 18 21:29:08 2017 -0500 - Mary Taft - took care of invalid command-line argument spaces thingy
+d14b691 - Sat Feb 18 20:32:14 2017 -0500 - Mary Taft - fixed glitch with null bytes being written to output
+f953458 - Sat Feb 18 19:56:36 2017 -0500 - Mary Taft - finished top 3 misspellings things, I think; it worked for a couple test cases yay
+32203c5 - Sat Feb 18 19:43:41 2017 -0500 - Mary Taft - almost done with top misspellings thing, just have to print the misspellings and then handle special case of a dict with fewer than 3 words
+5268701 - Sat Feb 18 19:37:24 2017 -0500 - Mary Taft - working on determining top 3 misspellings
+5791554 - Sat Feb 18 19:04:19 2017 -0500 - Mary Taft - added variables to keep track of data to be printed in statistics; all's left are (a) to determine top 3 misspelled words and (b) to test and debug lololol
+c4ac4e7 - Sat Feb 18 18:39:55 2017 -0500 - Mary Taft - reorganized and tried to (stylistically) clean up code in all files; placeholder for statistic-printing function
+78778d3 - Sat Feb 18 16:34:23 2017 -0500 - Mary Taft - as far as I've tested, writing a new dictionary file works properly
+92c5d53 - Sat Feb 18 15:30:01 2017 -0500 - Mary Taft - working on writing updated dict to file--just discovered dirname() and basename(), yay
+04a957a - Sat Feb 18 15:14:26 2017 -0500 - Mary Taft - alsoalso removing now-unnecessary pathstuffs from includes of header files
+fbf0d5d - Sat Feb 18 15:12:30 2017 -0500 - Mary Taft - wait dummy value so it compiles aaahhh
+b89d1f4 - Sat Feb 18 15:11:59 2017 -0500 - Mary Taft - interim updates
+449d039 - Sat Feb 18 14:38:05 2017 -0500 - Mary Taft - treat numbers as 'punctuation'; fancy schmancy allocation jazz for random misspellings
+cd9fae8 - Sat Feb 18 14:17:44 2017 -0500 - Mary Taft - set up gentypos() AND FREEEEEIINNNGGG inside processWord()
+bf873b1 - Sat Feb 18 13:45:01 2017 -0500 - Mary Taft - almost doing the adding-random-misspellings thing; also I have no memory leaks (at least on the tests I ran)!
+983da94 - Sat Feb 18 13:22:45 2017 -0500 - Mary Taft - incremental updates to spell-checking functions
+565fb88 - Sat Feb 18 12:36:27 2017 -0500 - Mary Taft - implemented functions to perform linear search of wordlists for spell-checking, but haven't implemented *correcting* misspelled words or [optionally] adding unrecognized words to the dictionary
+3c201f7 - Sat Feb 18 04:29:04 2017 -0500 - Mary Taft - freeing seems okay..? gotta test with valgrind
+cd9d4ad - Sat Feb 18 03:57:54 2017 -0500 - Mary Taft - satisfy old compiler hah
+5d465ae - Sat Feb 18 03:45:37 2017 -0500 - Mary Taft - handled leading and trailing punctuation, I think, I hope
+d6bbcc6 - Sat Feb 18 03:36:18 2017 -0500 - Mary Taft - working on handling leading and trailing punctuation
+20f38ef - Fri Feb 17 21:39:00 2017 -0500 - Mary Taft - char-by-char parsing of input file seems to work so far...
+c3d638a - Fri Feb 17 19:34:35 2017 -0500 - Mary Taft - small updates, working on spellCheck()
+ca2cfa1 - Fri Feb 17 18:08:11 2017 -0500 - Mary Taft - to-lowercase handling, fixed bug with ++ operator in addMisspelledWord
+0485674 - Fri Feb 17 17:23:44 2017 -0500 - Mary Taft - added int num_misspellings_to_add variable in the header file so it doesn't have to be passed as an argument
+46b00de - Fri Feb 17 17:12:56 2017 -0500 - Mary Taft - finished restructuring everything up to and including dictionary-parsing code, at least for now
+214d1ae - Fri Feb 17 16:31:27 2017 -0500 - Mary Taft - restructuring
+a251319 - Fri Feb 17 15:58:30 2017 -0500 - Mary Taft - small fixes
+c63853d - Fri Feb 17 15:04:23 2017 -0500 - Mary Taft - updated functions for adding words to dict and m_list from the dictionary file
+97bdadf - Fri Feb 17 02:26:12 2017 -0500 - Mary Taft - incremental progress on reading dictionary file into structs
+11096e8 - Fri Feb 17 01:15:38 2017 -0500 - Mary Taft - interimm updates
+5a9fd68 - Thu Feb 16 22:46:57 2017 -0500 - Mary Taft - small modifications
+7485218 - Thu Feb 16 22:27:50 2017 -0500 - Mary Taft - incremental debugging...  updated USAGE and argument parsing
+c8d1e56 - Thu Feb 16 18:28:48 2017 -0500 - Mary Taft - reformatted a bit; removed variable initializations; updated 'mispelled' field of 'struct misspelled_word' to be a bool instead of an int, in compliance with original assignment
+1be4892 - Wed Feb 15 18:04:52 2017 -0500 - Mary Taft - ci thingy
+2a22a06 - Tue Feb 14 20:38:26 2017 -0500 - Mary Taft - merging HW2_CODE
+57e258e - Thu Feb 9 12:47:05 2017 -0500 - Neal Beeken - Fix hw2-gitlab-ci.yml
+2b71880 - Tue Feb 7 17:34:27 2017 -0500 - cse320 - Initial Commit
+aec749e - Sun Feb 5 23:20:57 2017 -0500 - Mary Taft - returning const to original
+129c6ee - Sun Feb 5 23:16:45 2017 -0500 - Mary Taft - fixed issue in case when s had no mapping in Tutnese but appeared in the infile
+6491686 - Sun Feb 5 22:57:41 2017 -0500 - Mary Taft - did case stuff for tut decoding
+dd64e8d - Sun Feb 5 22:43:51 2017 -0500 - Mary Taft - accounted for squa thingys when there's no mapping of 's'
+bdbda6b - Sun Feb 5 22:33:51 2017 -0500 - Mary Taft - double decrypting works for all lowercase
+30a590b - Sun Feb 5 22:24:08 2017 -0500 - Mary Taft - updated if-statements which pertain to doubled consonants with mappings
+c650767 - Sun Feb 5 22:14:48 2017 -0500 - Mary Taft - more doubled encrypt cases; still not entirely working, and haven't handled cases yet
+f0a00ce - Sun Feb 5 21:58:19 2017 -0500 - Mary Taft - more specifications on doubles for decoding
+bda9546 - Sun Feb 5 21:49:46 2017 -0500 - Mary Taft - fixed issue with encoding unmapped consonants in tut
+c655ae5 - Sun Feb 5 21:27:32 2017 -0500 - Mary Taft - beginning to account for doubled vowels in tut decode
+9c06136 - Sun Feb 5 20:43:22 2017 -0500 - Mary Taft - returns EXIT_FAILURE upon invalid input to tutnese decode
+57322bf - Sun Feb 5 20:31:33 2017 -0500 - Mary Taft - checks for doubles (i.e., squa) but doesn't handle
+1c989ac - Sun Feb 5 19:52:16 2017 -0500 - Mary Taft - updated todo notes
+7a5ee38 - Sun Feb 5 19:44:27 2017 -0500 - Mary Taft - trying to get doubles decoding, not there yet
+14673c8 - Sun Feb 5 19:29:34 2017 -0500 - Mary Taft - handled decoding things which aren't doubles
+916caf8 - Sun Feb 5 19:00:04 2017 -0500 - Mary Taft - incremental progress gaaah
+7f6f1b3 - Sun Feb 5 17:53:46 2017 -0500 - Mary Taft - more specific placeholders for tut decoding stuff
+51d5866 - Sun Feb 5 15:58:48 2017 -0500 - Mary Taft - rough and imcomplete hardly-even pseudocode for tut decoding
+91f4982 - Sun Feb 5 15:52:50 2017 -0500 - Mary Taft - renamed write() so it doesn't override other write() functions (e.g., in tests/validargs_tests.c)
+e9799bf - Sun Feb 5 15:27:16 2017 -0500 - Mary Taft - handled char-preceding-EOF issue of yore
+5912a3b - Sun Feb 5 15:13:15 2017 -0500 - Mary Taft - handled doubles of differing cases
+5ba8891 - Sun Feb 5 15:06:37 2017 -0500 - Mary Taft - have to account for doubles with different cases
+1ef8afe - Sun Feb 5 14:50:30 2017 -0500 - Mary Taft - incremental progress on doubles
+97e55eb - Sun Feb 5 13:30:31 2017 -0500 - Mary Taft - placeholder for doubled letters
+2d3149d - Sun Feb 5 13:04:31 2017 -0500 - Mary Taft - set up to read doubles (though not implemented yet) whilst preserving treatment of singles (seems to still work)
+2833907 - Sun Feb 5 05:29:50 2017 -0500 - Mary Taft - reminders to self
+c3e4172 - Sun Feb 5 05:13:08 2017 -0500 - Mary Taft - tut encoding, accounting for cases but not for double letters
+1324a0f - Sun Feb 5 04:33:00 2017 -0500 - Mary Taft - beginning code for encoding in tut
+235807f - Sun Feb 5 03:52:06 2017 -0500 - Mary Taft - starting tutnese
+a992079 - Sun Feb 5 00:49:31 2017 -0500 - Mary Taft - handled lowercase letters in input
+e257901 - Sun Feb 5 00:30:31 2017 -0500 - Mary Taft - caesar cipher! encode and decode
+6da4c49 - Sun Feb 5 00:25:31 2017 -0500 - Mary Taft - caesar encoding
+dd2ab11 - Sat Feb 4 22:47:55 2017 -0500 - Mary Taft - incremental work on file i/o for substitution
+ceff528 - Sat Feb 4 20:21:16 2017 -0500 - Mary Taft - implemented own string functions
+6e9a561 - Sat Feb 4 18:25:28 2017 -0500 - Mary Taft - pseudocode for caesar shifting
+d04f4e4 - Sat Feb 4 18:08:41 2017 -0500 - Mary Taft - tests to make sure the correct caesar-cipher function is called, with the correct shift amount, based on user input
+1e5dd03 - Sat Feb 4 17:50:34 2017 -0500 - Mary Taft - set up if-statements to determine which type of encoding/decoding will be used
+9c229a3 - Sat Feb 4 16:01:17 2017 -0500 - Mary Taft - display help menu
+612eb2a - Sat Feb 4 15:48:22 2017 -0500 - Mary Taft - handled shifting a custom amount
+df77a11 - Sat Feb 4 14:55:51 2017 -0500 - Mary Taft - hah so we can't use string.h hah
+8b85c7a - Sat Feb 4 13:02:19 2017 -0500 - Mary Taft - file i/o updates
+d4b2ea2 - Sat Feb 4 01:40:15 2017 -0500 - Mary Taft - comments for tomorrow's continued coding
+d6cae55 - Sat Feb 4 01:24:55 2017 -0500 - Mary Taft - set up cases; still have to handle file i/o using fopen()
+4f13e76 - Fri Feb 3 18:20:45 2017 -0500 - Mary Taft - minor formatting changes, comments, and a couple print statements
+4e48b97 - Tue Jan 31 14:48:18 2017 -0500 - Mary Taft - Merge remote-tracking branch 'HW1_CODE/master'
+8e0b63e - Tue Jan 31 12:19:11 2017 -0500 - cse320 - Test fix, debug fix, usage updated
+4b484d5 - Sat Jan 28 15:05:58 2017 -0500 - Mary Taft - merging once again
+98efb13 - Fri Jan 27 17:44:02 2017 -0500 - cse320 - Unit Tests and CI Fix
+a77f514 - Fri Jan 27 17:26:34 2017 -0500 - Mary Taft - renamed .yml file
+93ada7b - Fri Jan 27 17:08:47 2017 -0500 - Mary Taft - Merging HW1_CODE_take2 (hah my bad; how does one rename remote branches?)
+2495875 - Fri Jan 27 00:01:30 2017 -0500 - cse320 - Fixed Unit Tests
+2420aa9 - Thu Jan 26 23:44:36 2017 -0500 - cse320 - Merge branch 'master' of https://gitlab01.cs.stonybrook.edu/cse320/hw1
+0b5a96b - Thu Jan 26 23:43:59 2017 -0500 - cse320 - Added Alphabet extern
+01ed211 - Thu Jan 26 17:37:29 2017 -0500 - gposcidonio - Renamed .gitlab-ci.yml
+6c27a13 - Thu Jan 26 17:00:55 2017 -0500 - Mary Taft - modified return value of say_hi()
+d91608e - Thu Jan 26 16:06:09 2017 -0500 - cse320 - Added CI
+1541d36 - Thu Jan 26 15:37:57 2017 -0500 - cse320 - Basecode
+39c7abd - Thu Jan 26 00:52:25 2017 -0500 - Mary Taft - Merging HW0_CODE
+ac83f6e - Thu Jan 26 00:45:06 2017 -0500 - Mary Taft - My First Commit
+6b86030 - Thu Jan 26 00:07:21 2017 -0500 - cse320 - Welcome to CSE320!
+af933db - Tue Jan 17 18:50:53 2017 -0500 - cse320 - hw0 basecode
